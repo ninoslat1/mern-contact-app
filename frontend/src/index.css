@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input {
+        @apply bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight
+    }
+
+    input:focus {
+        @apply outline-none bg-white border-sky-500
+    }
+
+}
+
+@layer components {
+    .link {
+        @apply block mt-4 lg:inline-block lg:mt-0 lg:px-10 transition-all duration-500
+    }
+
+    .link:hover {
+        @apply text-sky-500
+    }
+}
